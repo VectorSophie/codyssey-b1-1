@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#E8E5DD"/>
+
+  <!-- corner brackets -->
+  <polyline points="10,30 10,10 30,10" fill="none" stroke="#7FB7C9" stroke-width="1.5"/>
+  <polyline points="170,10 190,10 190,30" fill="none" stroke="#7FB7C9" stroke-width="1.5"/>
+  <polyline points="10,170 10,190 30,190" fill="none" stroke="#7FB7C9" stroke-width="1.5"/>
+  <polyline points="170,190 190,190 190,170" fill="none" stroke="#7FB7C9" stroke-width="1.5"/>
+
+  <!-- scan lines -->
+  <rect x="20" y="54" width="160" height="0.5" fill="#7FB7C9" opacity="0.18"/>
+  <rect x="20" y="134" width="160" height="0.5" fill="#7FB7C9" opacity="0.18"/>
+
+  <!-- avatar circle -->
+  <circle cx="100" cy="88" r="46" fill="none" stroke="#CCC9C1" stroke-width="1"/>
+  <circle cx="100" cy="88" r="44" fill="#7FB7C9" opacity="0.12"/>
+
+  <!-- initials -->
+  <text x="100" y="98" text-anchor="middle" dominant-baseline="middle"
+    font-family="'IBM Plex Mono', monospace" font-size="30" font-weight="500"
+    fill="#7FB7C9" letter-spacing="6">JB</text>
+
+  <!-- status dot -->
+  <circle cx="100" cy="157" r="3.5" fill="#7BBF8E" opacity="0.85"/>
+
+  <!-- label -->
+  <text x="100" y="172" text-anchor="middle"
+    font-family="'IBM Plex Mono', monospace" font-size="8" letter-spacing="3.5"
+    fill="#7A848E">OPERATOR</text>
+</svg>

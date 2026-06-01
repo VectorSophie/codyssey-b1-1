@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack B. | Portfolio</title>
+  <meta name="description" content="Jack B. — Fullstack Developer, Writer, Systems Researcher. AI-powered web systems &amp; open-source tools.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Deferred script (runs after HTML parsing) -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ── HEADER / NAV ─────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="기본 탐색">
+      <a href="#" class="nav-logo" aria-label="Jack B. 홈으로">
+        <span class="logo-id">ST·00</span>
+        <span class="logo-name">JACK B.</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-icon btn-theme" id="btn-theme" aria-label="다크 모드 전환">
+          <i class="fa-solid fa-moon" id="theme-icon" aria-hidden="true"></i>
+        </button>
+        <button class="btn-icon btn-hamburger" id="btn-hamburger"
+                aria-label="메뉴 열기/닫기" aria-expanded="false" aria-controls="nav-menu">
+          <i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ── MAIN ─────────────────────────────────────────── -->
+  <main>
+
+    <!-- ╔══ HERO ══════════════════════════════════════════╗ -->
+    <section id="hero" class="hero" aria-labelledby="hero-name">
+      <div class="container">
+
+        <div class="hero-status">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span class="label">STATION: JB·EXP·001</span>
+          <span class="sep" aria-hidden="true">·</span>
+          <span class="label hidden-mobile">OPERATOR: JACK B.</span>
+          <span class="sep hidden-mobile" aria-hidden="true">·</span>
+          <span class="label" id="hero-time" aria-live="off">00:00:00</span>
+        </div>
+
+        <h1 class="hero-name" id="hero-name">Jack B.</h1>
+
+        <div class="hero-role" aria-label="직책">
+          <span class="label muted">ROLE·&nbsp;</span>
+          <span class="typing-text" id="typing-text" aria-live="polite"></span>
+          <span class="typing-cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-bio">
+          Fullstack developer focused on AI-powered web systems, LLM infrastructure,
+          and open-source tools. I build useful software and occasionally silly ideas
+          that somehow work.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-secondary">Contact</a>
+        </div>
+
+        <div class="hero-footer-line" aria-hidden="true">
+          <span class="label accent" id="sys-status">NOMINAL</span>
+          <span class="deco-line"></span>
+          <span class="label muted">UTC+9 · SEOUL, KR</span>
+        </div>
+
+      </div>
+    </section>
+    <!-- ╚══════════════════════════════════════════════════╝ -->
+
+    <!-- ╔══ ABOUT ═════════════════════════════════════════╗ -->
+    <section id="about" class="about section" aria-labelledby="about-title">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="label muted">ST·01 · OPERATOR PROFILE</span>
+          <h2 class="section-title" id="about-title">About</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image animate-on-scroll">
+            <div class="lab-module profile-module">
+              <span class="corner tl" aria-hidden="true"></span>
+              <span class="corner tr" aria-hidden="true"></span>
+              <span class="corner bl" aria-hidden="true"></span>
+              <span class="corner br" aria-hidden="true"></span>
+              <img src="images/profile.svg"
+                   alt="Jack B. — 개발자이자 시스템 연구자를 나타내는 lab-aesthetic 프로필 일러스트"
+                   class="profile-img">
+              <div class="module-id label" aria-hidden="true">OPERATOR: JB</div>
+            </div>
+          </div>
+
+          <div class="about-content animate-on-scroll">
+            <p class="about-bio">
+              Fullstack developer focused on AI-powered web systems, LLM infrastructure,
+              and open-source tools. I write about what I build — mostly on Velog and Naver,
+              in both Korean and English.
+            </p>
+            <p class="about-bio">
+              I believe open source turns private learning into public infrastructure.
+              Most of my projects live on GitHub, ranging from silly ideas that somehow
+              work to serious ML infrastructure.
+            </p>
+
+            <div class="about-langs">
+              <span class="label muted">LANGUAGES&nbsp;·&nbsp;</span>
+              <span class="lang-tag">EN <small>Primary</small></span>
+              <span class="lang-tag">KO <small>Native</small></span>
+              <span class="lang-tag">ES <small>Conversational</small></span>
+              <span class="lang-tag">ZH <small>Relearning</small></span>
+            </div>
+
+            <div class="about-links">
+              <a href="https://github.com/VectorSophie"
+                 target="_blank" rel="noopener noreferrer" class="about-link">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span>VectorSophie</span>
+              </a>
+              <a href="https://velog.io/@vectorsophie/posts"
+                 target="_blank" rel="noopener noreferrer" class="about-link">
+                <i class="fa-solid fa-pen-nib" aria-hidden="true"></i>
+                <span>Velog</span>
+              </a>
+              <a href="mailto:jay7math@gmail.com" class="about-link">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span>jay7math@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ╚══════════════════════════════════════════════════╝ -->
+
+    <!-- ╔══ SKILLS ════════════════════════════════════════╗ -->
+    <section id="skills" class="skills section" aria-labelledby="skills-title">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="label muted">ST·04 · CAPABILITY MATRIX</span>
+          <h2 class="section-title" id="skills-title">Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card lab-module animate-on-scroll">
+            <span class="corner tl" aria-hidden="true"></span>
+            <span class="corner tr" aria-hidden="true"></span>
+            <span class="corner bl" aria-hidden="true"></span>
+            <span class="corner br" aria-hidden="true"></span>
+            <div class="skill-category label">LANG</div>
+            <ul class="skill-list" role="list">
+              <li>TypeScript</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>Rust</li>
+            </ul>
+          </div>
+
+          <div class="skill-card lab-module animate-on-scroll">
+            <span class="corner tl" aria-hidden="true"></span>
+            <span class="corner tr" aria-hidden="true"></span>
+            <span class="corner bl" aria-hidden="true"></span>
+            <span class="corner br" aria-hidden="true"></span>
+            <div class="skill-category label">FRONTEND</div>
+            <ul class="skill-list" role="list">
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Svelte</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+
+          <div class="skill-card lab-module animate-on-scroll">
+            <span class="corner tl" aria-hidden="true"></span>
+            <span class="corner tr" aria-hidden="true"></span>
+            <span class="corner bl" aria-hidden="true"></span>
+            <span class="corner br" aria-hidden="true"></span>
+            <div class="skill-category label">BACKEND</div>
+            <ul class="skill-list" role="list">
+              <li>FastAPI</li>
+              <li>Supabase</li>
+              <li>Redis</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+
+          <div class="skill-card lab-module animate-on-scroll">
+            <span class="corner tl" aria-hidden="true"></span>
+            <span class="corner tr" aria-hidden="true"></span>
+            <span class="corner bl" aria-hidden="true"></span>
+            <span class="corner br" aria-hidden="true"></span>
+            <div class="skill-category label">ML / AI</div>
+            <ul class="skill-list" role="list">
+              <li>PyTorch</li>
+              <li>TensorFlow</li>
+              <li>LangChain</li>
+              <li>Genkit</li>
+            </ul>
+          </div>
+
+          <div class="skill-card lab-module animate-on-scroll">
+            <span class="corner tl" aria-hidden="true"></span>
+            <span class="corner tr" aria-hidden="true"></span>
+            <span class="corner bl" aria-hidden="true"></span>
+            <span class="corner br" aria-hidden="true"></span>
+            <div class="skill-category label">OPS</div>
+            <ul class="skill-list" role="list">
+              <li>Docker</li>
+              <li>Vercel</li>
+              <li>GitHub Actions</li>
+              <li>Nginx</li>
+            </ul>
+          </div>
+
+          <div class="skill-card lab-module animate-on-scroll">
+            <span class="corner tl" aria-hidden="true"></span>
+            <span class="corner tr" aria-hidden="true"></span>
+            <span class="corner bl" aria-hidden="true"></span>
+            <span class="corner br" aria-hidden="true"></span>
+            <div class="skill-category label">DOMAIN</div>
+            <ul class="skill-list" role="list">
+              <li>LLM Infrastructure</li>
+              <li>Web Systems</li>
+              <li>Open Source</li>
+              <li>Technical Writing</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ╚══════════════════════════════════════════════════╝ -->
+
+    <!-- ╔══ PROJECTS ══════════════════════════════════════╗ -->
+    <section id="projects" class="projects section" aria-labelledby="projects-title">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="label muted">ST·02 · REPOSITORY INDEX</span>
+          <h2 class="section-title" id="projects-title">Projects</h2>
+        </div>
+
+        <!-- Filter bar (bonus: language filtering) -->
+        <div class="filter-bar animate-on-scroll" id="filter-bar">
+          <span class="label muted">FILTER&nbsp;·&nbsp;</span>
+          <div class="filter-buttons" id="filter-buttons" role="group" aria-label="언어 필터">
+            <button class="filter-btn active" data-lang="all">All</button>
+          </div>
+        </div>
+
+        <!-- Dynamically rendered by JS -->
+        <div id="projects-container" class="projects-container" aria-live="polite" aria-label="프로젝트 목록"></div>
+
+      </div>
+    </section>
+    <!-- ╚══════════════════════════════════════════════════╝ -->
+
+    <!-- ╔══ CONTACT ═══════════════════════════════════════╗ -->
+    <section id="contact" class="contact section" aria-labelledby="contact-title">
+      <div class="container">
+
+        <div class="section-header animate-on-scroll">
+          <span class="label muted">ST·05 · SIGNAL PROCESSING</span>
+          <h2 class="section-title" id="contact-title">Contact</h2>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info animate-on-scroll">
+            <div class="label muted">OUTBOUND CHANNELS</div>
+            <div class="channels">
+              <div class="channel">
+                <span class="label">EMAIL</span>
+                <span class="sep" aria-hidden="true">──</span>
+                <a href="mailto:jay7math@gmail.com">jay7math@gmail.com</a>
+              </div>
+              <div class="channel">
+                <span class="label">GITHUB</span>
+                <span class="sep" aria-hidden="true">──</span>
+                <a href="https://github.com/VectorSophie"
+                   target="_blank" rel="noopener noreferrer">VectorSophie</a>
+              </div>
+              <div class="channel">
+                <span class="label">VELOG</span>
+                <span class="sep" aria-hidden="true">──</span>
+                <a href="https://velog.io/@vectorsophie/posts"
+                   target="_blank" rel="noopener noreferrer">vectorsophie</a>
+              </div>
+              <div class="channel">
+                <span class="label">NAVER</span>
+                <span class="sep" aria-hidden="true">──</span>
+                <a href="https://blog.naver.com/paranormalian"
+                   target="_blank" rel="noopener noreferrer">paranormalian</a>
+              </div>
+            </div>
+
+            <div class="not-accepting">
+              <div class="label muted">NOT ACCEPTING</div>
+              <p>Crypto · "star my repos and back" · suspicious PRs</p>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap animate-on-scroll">
+            <form class="contact-form" id="contact-form" novalidate>
+
+              <div class="form-field">
+                <label for="name" class="form-label label">NAME</label>
+                <input type="text" id="name" name="name" class="form-input"
+                       placeholder="Your name" autocomplete="name">
+                <span class="form-error" id="name-error" role="alert"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="email" class="form-label label">EMAIL</label>
+                <input type="email" id="email" name="email" class="form-input"
+                       placeholder="your@email.com" autocomplete="email">
+                <span class="form-error" id="email-error" role="alert"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="message" class="form-label label">MESSAGE</label>
+                <textarea id="message" name="message" class="form-textarea"
+                          placeholder="Your message..." rows="5"></textarea>
+                <span class="form-error" id="message-error" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              </button>
+
+              <div class="form-success" id="form-success" hidden>
+                <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                <span>Message received. I'll get back to you soon.</span>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ╚══════════════════════════════════════════════════╝ -->
+
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="label">SYS:JB·EXP·001</span>
+      <div class="footer-status">
+        <span class="pulse-dot green" aria-hidden="true"></span>
+        <span class="label footer-ok">ALL SYSTEMS NOMINAL</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/VectorSophie"
+           target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:jay7math@gmail.com" aria-label="이메일 보내기">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+      <span class="label muted">© 2026 JBLAB</span>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button class="btn-scroll-top" id="btn-scroll-top" aria-label="맨 위로 이동" hidden>
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+</body>
+</html>
