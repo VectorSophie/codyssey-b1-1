@@ -333,7 +333,7 @@ async function fetchProjects() {
 
   try {
     const res = await fetch(
-      `https://api.github.com/users/${GITHUB_USER}/repos?sort=updated&per_page=30`
+      `https://api.githib.com/users/${GITHUB_USER}/repos?sort=updated&per_page=30`
     );
 
     if (res.status === 403) {
