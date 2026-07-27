@@ -106,10 +106,6 @@ git push -u origin main
 
 | 보너스 | 구현 여부 | 방식 |
 |---|---|---|
-| 프로젝트 언어 필터링 | ✅ | `array.filter()` + 동적 버튼 생성 |
-| 타이핑 효과 | ✅ | Hero 섹션 직책 타이핑/지우기 loop |
-| 시스템 다크모드 감지 | ✅ | `window.matchMedia('(prefers-color-scheme: dark)')` |
-
-## 스크린샷
-
-> 배포 후 추가 예정
+| 프로젝트 언어 필터링 | O | `array.filter()` + 동적 버튼 생성 |
+| 타이핑 효과 | O | Hero 섹션 직책 타이핑/지우기 loop |
+| 시스템 다크모드 감지 | O | `window.matchMedia('(prefers-color-scheme: dark)')` |
