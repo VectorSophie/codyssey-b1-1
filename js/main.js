@@ -331,7 +331,35 @@ function buildFilterButtons(repos) {
 async function fetchProjects() {
   setProjectsState('loading');
 
-  
+  try {
+    const res = await fetch(
+      `https://api.githib.com/users/${GITHUB_USER}/repos?sort=updated&per_page=30`
+    );
+
+    if (res.status === 403) {
+      throw new Error('레이트 리밋에 도달했습니다. 잠시 후 다시 시도해주세요. (60 req/hr)');
+    }
+    if (!res.ok) throw new Error(`GitHub API 오류: HTTP ${res.status}`);
+
+    const repos = await res.json();
+
+    // array.filter() to exclude forks, array.sort() by stars
+    const sorted = repos
+      .filter(r => !r.fork)
+      .sort((a, b) => b.stargazers_count - a.stargazers_count);
+
+    if (sorted.length === 0) {
+      setProjectsState('empty');
+      return;
+    }
+
+    state.projects.data = sorted;
+    buildFilterButtons(sorted);
+    setProjectsState('success');
+
+  } catch (err) {
+    setProjectsState('error', err.message);
+  }
 }
 
 /* ════════════════════════════════════════════════════════════
