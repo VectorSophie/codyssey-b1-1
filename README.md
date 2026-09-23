@@ -1,4 +1,4 @@
-# b4-1 Portfolio — Jack B.
+# b1-1 Portfolio — Jack B.
 
 순수 HTML / CSS / JavaScript로 구현한 반응형 포트폴리오 웹사이트.  
 외부 UI 프레임워크 없이 모든 인터랙션을 직접 구현했다.
@@ -14,12 +14,12 @@
 
 ## 배포 URL
 
-**https://VectorSophie.github.io/codyssey-b4-1**
+**https://VectorSophie.github.io/codyssey-b1-1**
 
 ## 폴더 구조
 
 ```
-codyssey-b4-1/
+codyssey-b1-1/
 ├── index.html          # 메인 페이지 (시맨틱 마크업)
 ├── css/
 │   └── style.css       # 전체 스타일시트 (CSS 변수, 반응형, 다크모드)
@@ -93,7 +93,7 @@ git push -u origin main
 #    Source: "Deploy from a branch"
 #    Branch: main / (root)
 
-# 3. 배포 URL: https://VectorSophie.github.io/codyssey-b4-1
+# 3. 배포 URL: https://VectorSophie.github.io/codyssey-b1-1
 ```
 
 ## GitHub API 주의사항
